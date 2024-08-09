@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+#root {
+    height: 100%
+}
+
+body {
+    background-color: rgba(240, 245, 255, .64)
+}
+
+.ant-btn-primary {
+    background-color: #002766;
+    border-color: #002766
+}
+
+.ant-btn-primary:focus,
+.ant-btn-primary:hover {
+    background-color: #003a8c;
+    border-color: #003a8c
+}
+
+.neutral.ant-btn-primary {
+    background-color: #0050b3;
+    border-color: #0050b3
+}
+
+.neutral.ant-btn-primary:focus,
+.neutral.ant-btn-primary:hover {
+    background-color: #096dd9;
+    border-color: #096dd9
+}
+
+.danger.ant-btn-primary {
+    background-color: #cf1322;
+    border-color: #cf1322
+}
+
+.danger.ant-btn-primary:focus,
+.danger.ant-btn-primary:hover {
+    background-color: #f5222d;
+    border-color: #f5222d
+}
+
+.positive.ant-btn-primary {
+    background-color: #389e0d;
+    border-color: #389e0d
+}
+
+.positive.ant-btn-primary:focus,
+.positive.ant-btn-primary:hover {
+    background-color: #52c41a;
+    border-color: #52c41a
+}
+
+.ant-btn-group .ant-btn-primary+.ant-btn-primary,
+.ant-btn-group .ant-btn-primary:last-child:not(:first-child) {
+    border-left-color: #afafaf
+}
+
+.ant-btn-group .ant-btn-primary:first-child:not(:last-child) {
+    border-right-color: #afafaf
+}
+
+.ant-dropdown-menu {
+    background-color: #002766
+}
+
+.ant-dropdown-menu-item {
+    color: #fafafa
+}
+
+.ant-dropdown-menu-item:focus,
+.ant-dropdown-menu-item:hover {
+    background-color: #0050b3
+}
+
+.ant-input-group-addon {
+    background-color: #002766;
+    border-color: #002766;
+    color: #d9d9d9
+}
+
+.ant-modal {
+    padding: 0
+}
+
+.playground {
+    height: 100%;
+    touch-action: none
+}
+
+.nodeupdateview {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    width: 100%
+}
+
+.nodeupdateview-left-input {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+    margin-left: 20px;
+    width: 150px
+}
+
+.nodeupdateview-left-compressed-item {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+    margin-left: 12px
+}
+
+.nodeupdateview-left-compressed-item[disabled] {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2)
+}
+
+.nodeupdateview-right-item {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+    margin-right: 20px
+}
+
+.nodeupdateview.mobile {
+    display: none
+}
+
+@media only screen and (max-width:600px) {
+    .nodeupdateview.desktop {
+        display: none
+    }
+    .nodeupdateview.mobile {
+        display: flex
+    }
+    .nodeupdateview-left-input {
+        width: 110px
+    }
+}
+
+.tutorial-content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: space-around
+}
+
+.tutorial-content-video {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 273px
+}
+
+.tutorial-content-video-background {
+    background-color: rgba(240, 245, 255, .64);
+    min-height: 273px;
+    min-width: 523px
+}
+
+.tutorial-content-video video {
+    position: absolute
+}
+
+.overlay-bottom-right {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 25%
+}
+
+.overlay-bottom-right-item {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25)
+}
+
+@media only screen and (max-height:575px),
+only screen and (max-width:600px) {
+    .overlay-bottom-right {
+        display: none
+    }
+}
+
+.homeview {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    width: 100%
+}
+
+.homeview-left-item,
+.homeview-left .ant-dropdown-trigger {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+    margin-left: 20px
+}
+
+.homeview-right-item {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .25);
+    margin-right: 20px
+}
+
+.homeview.mobile {
+    display: none
+}
+
+@media only screen and (max-width:600px) {
+    .homeview.desktop {
+        display: none
+    }
+    .homeview.mobile {
+        display: flex
+    }
+}
+
+.homeview-bottom-left {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 75%
+}
+
+/*# sourceMappingURL=main.87f8e2c8.chunk.css.map */

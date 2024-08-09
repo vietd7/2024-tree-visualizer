@@ -1,0 +1,47 @@
+.nodeupdateview {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  
+  &-left {
+    &-input {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px 0px;
+      margin-left: 20px;
+      width: 150px;
+    }
+  
+    &-compressed-item {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px 0px;
+      margin-left: 12px;
+    }
+
+    &-compressed-item[disabled] {
+      box-shadow: rgba(0, 0, 0, 0.20) 0px 2px 8px 0px;
+    }
+  }
+
+  &-right-item {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 2px 8px 0px;
+    margin-right: 20px;
+  }
+}
+
+.nodeupdateview.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nodeupdateview.desktop {
+    display: none;
+  }
+
+  .nodeupdateview.mobile {
+    display: flex;
+  }
+
+  .nodeupdateview-left-input {
+    width: 110px;
+  }
+}
