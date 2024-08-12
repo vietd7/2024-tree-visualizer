@@ -1,38 +1,38 @@
 (this["webpackJsonptree-visualizer"] = this["webpackJsonptree-visualizer"] || []).push([
     [0], {
-        122: function(e, t, a) {
+        122: function (e, t, a) {
             e.exports = a.p + "static/media/addNode.ec158f9f.mp4"
         },
-        123: function(e, t, a) {
+        123: function (e, t, a) {
             e.exports = a.p + "static/media/deleteNode.49098f7f.mp4"
         },
-        124: function(e, t, a) {
+        124: function (e, t, a) {
             e.exports = a.p + "static/media/deleteTree.decb90bd.mp4"
         },
-        125: function(e, t, a) {
+        125: function (e, t, a) {
             e.exports = a.p + "static/media/editNode.e24912de.mp4"
         },
-        126: function(e, t, a) {
+        126: function (e, t, a) {
             e.exports = a.p + "static/media/copyTree.3a8d1203.mp4"
         },
-        127: function(e, t, a) {
+        127: function (e, t, a) {
             e.exports = a.p + "static/media/traversalAlgorithms.bd1941cf.mp4"
         },
-        128: function(e, t, a) {
+        128: function (e, t, a) {
             e.exports = a.p + "static/media/visualizingAlgorithms.1883da2f.mp4"
         },
-        138: function(e, t, a) {
+        138: function (e, t, a) {
             e.exports = a(235)
         },
-        143: function(e, t, a) {},
-        144: function(e, t, a) {},
-        145: function(e, t, a) {},
-        146: function(e, t, a) {},
-        178: function(e, t, a) {},
-        187: function(e, t, a) {},
-        191: function(e, t, a) {},
-        192: function(e, t, a) {},
-        235: function(e, t, a) {
+        143: function (e, t, a) { },
+        144: function (e, t, a) { },
+        145: function (e, t, a) { },
+        146: function (e, t, a) { },
+        178: function (e, t, a) { },
+        187: function (e, t, a) { },
+        191: function (e, t, a) { },
+        192: function (e, t, a) { },
+        235: function (e, t, a) {
             "use strict";
             a.r(t);
             var n, l, r = a(0),
@@ -41,22 +41,22 @@
                 c = a.n(i),
                 d = (a(143), a(40)),
                 s = a(28);
-            ! function(e) {
+            ! function (e) {
                 e.UpdatePlayground = "UPDATE_PLAYGROUND"
             }(n || (n = {})),
-            function(e) {
-                e.Home = "HomeView", e.NodeUpdate = "NodeUpdateView", e.Visualization = "VisualizationView"
-            }(l || (l = {}));
+                function (e) {
+                    e.Home = "HomeView", e.NodeUpdate = "NodeUpdateView", e.Visualization = "VisualizationView"
+                }(l || (l = {}));
             var u, m, h, p, v, f = {
-                    playgroundView: l.Home
-                },
-                g = function(e) {
+                playgroundView: l.Home
+            },
+                g = function (e) {
                     return {
                         type: n.UpdatePlayground,
                         payload: e
                     }
                 },
-                E = function() {
+                E = function () {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : f,
                         t = arguments.length > 1 ? arguments[1] : void 0;
                     switch (t.type) {
@@ -67,28 +67,28 @@
                     }
                 },
                 y = a(17);
-            ! function(e) {
+            ! function (e) {
                 e[e.Left = 0] = "Left", e[e.Right = 1] = "Right"
             }(u || (u = {})),
-            function(e) {
-                e.Regular = "regular", e.Plus = "plus"
-            }(m || (m = {})),
-            function(e) {
-                e.Visible = "visible", e.Hidden = "hidden"
-            }(h || (h = {})),
-            function(e) {
-                e.Shown = "+", e.Hidden = ""
-            }(p || (p = {})),
-            function(e) {
-                e.FetchTree = "FETCH_TREE", e.UpdateTree = "UPDATE_TREE", e.DeleteTree = "DELETE_TREE"
-            }(v || (v = {}));
+                function (e) {
+                    e.Regular = "regular", e.Plus = "plus"
+                }(m || (m = {})),
+                function (e) {
+                    e.Visible = "visible", e.Hidden = "hidden"
+                }(h || (h = {})),
+                function (e) {
+                    e.Shown = "+", e.Hidden = ""
+                }(p || (p = {})),
+                function (e) {
+                    e.FetchTree = "FETCH_TREE", e.UpdateTree = "UPDATE_TREE", e.DeleteTree = "DELETE_TREE"
+                }(v || (v = {}));
             var b, N = {
-                    shape: "circle",
-                    shapeProps: {
-                        r: 30,
-                        fill: "#FFFFFF"
-                    }
-                },
+                shape: "circle",
+                shapeProps: {
+                    r: 30,
+                    fill: "#FFFFFF"
+                }
+            },
                 w = {
                     shape: "circle",
                     shapeProps: {
@@ -123,42 +123,44 @@
                     type: m.Regular,
                     nodeSvgShape: Object(y.a)(N)
                 };
-            ! function(e) {
+            ! function (e) {
                 e[e.AddNewNode = 0] = "AddNewNode", e[e.ShowPlusNodes = 1] = "ShowPlusNodes", e[e.HidePlusNodes = 2] = "HidePlusNodes"
             }(b || (b = {}));
-            var j, S, C, F, V, x = function(e) {
-                    return !!e.children && 2 === e.children.length && e.children[0].type === m.Plus && e.children[1].type === m.Regular
-                },
-                I = function(e) {
+            var j, S, C, F, V, x = function (e) {
+                return !!e.children && 2 === e.children.length && e.children[0].type === m.Plus && e.children[1].type === m.Regular
+            },
+                I = function (e) {
                     return !!e.children && 2 === e.children.length && e.children[0].type === m.Regular && e.children[1].type === m.Plus
                 },
-                z = function(e) {
+                z = function (e) {
                     return (!e.children || 0 === e.children.length) && e.type === m.Regular
                 },
-                T = function(e) {
-                    return e.type === m.Plus ? b.AddNewNode : z(e) || function(e) {
+                T = function (e) {
+                    return e.type === m.Plus ? b.AddNewNode : z(e) || function (e) {
                         return !!e.children && 2 === e.children.length && (e.children[0].type === m.Plus && e.children[0].name === p.Hidden || e.children[1].type === m.Plus && e.children[1].name === p.Hidden)
                     }(e) ? b.ShowPlusNodes : b.HidePlusNodes
                 },
-                R = function(e) {
+                R = function (e) {
                     if (void 0 === e) return 0;
-                    var t = parseInt(e, 10);
-                    if (Number.isNaN(t)) throw new Error("[Utils] Invalid value passed to `toNumber`.");
+                    // var t = parseInt(e, 10);
+                    var t = e.replace(/[^0-9.]/g, '');;
+                    // console.log("eeee",e);
+                    // if (Number.isNaN(t)) throw new Error("[Utils] Invalid value passed to `toNumber`.");
                     return t
                 },
-                A = function(e, t) {
+                A = function (e, t) {
                     var a = e;
-                    return t.split("").forEach((function(e) {
+                    return t.split("").forEach((function (e) {
                         a.children && (a = a.children[R(e)])
                     })), a
                 },
-                L = function(e) {
+                L = function (e) {
                     e.nodeSvgShape = Object(y.a)(k)
                 },
-                H = function(e) {
+                H = function (e) {
                     e.nodeSvgShape = Object(y.a)(N)
                 },
-                D = function(e) {
+                D = function (e) {
                     var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
                     return {
                         name: t ? p.Shown : p.Hidden,
@@ -167,12 +169,12 @@
                         nodeSvgShape: t ? Object(y.a)(w) : Object(y.a)(O)
                     }
                 },
-                U = function(e) {
-                    H(e), e.children && (! function(e) {
+                U = function (e) {
+                    H(e), e.children && (! function (e) {
                         return !!e.children && 2 === e.children.length && e.children[0].type === m.Plus && e.children[1].type === m.Plus
                     }(e) ? x(e) ? (e.children[0].name = p.Hidden, e.children[0].nodeSvgShape = Object(y.a)(O)) : I(e) && (e.children[1].name = p.Hidden, e.children[1].nodeSvgShape = Object(y.a)(O)) : delete e.children)
                 },
-                M = function() {
+                M = function () {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
                         t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
                     return {
@@ -182,23 +184,23 @@
                         nodeSvgShape: Object(y.a)(N)
                     }
                 },
-                W = function(e, t) {
+                W = function (e, t) {
                     if (void 0 !== t) {
                         var a = A(e, t);
                         U(a)
                     }
                 },
                 B = a(96),
-                J = function(e) {
+                J = function (e) {
                     for (var t = Object(B.a)(e), a = t.length - 1; a >= 0;) {
                         null === t[Math.floor((a - 1) / 2)] && t.splice(a, 1), a -= 1
                     }
                     return t
                 },
-                _ = function(e) {
+                _ = function (e) {
                     for (var t = [], a = 0, n = [
-                            [e, 0]
-                        ]; n.length;) {
+                        [e, 0]
+                    ]; n.length;) {
                         for (var l = 1 << a, r = n.length, o = 0, i = -1; r > 0;) {
                             var c = n.shift();
                             if (!c) break;
@@ -208,19 +210,19 @@
                         }
                         o !== l && (t = t.concat(Array(l - o).fill(null))), a += 1
                     }
-                    return function(e) {
+                    return function (e) {
                         for (var t = Object(B.a)(e), a = t.length - 1; a >= 0 && null === t[a];) t.pop(), a -= 1;
                         return t
                     }(t)
                 },
-                Y = function(e) {
+                Y = function (e) {
                     var t = JSON.parse(null !== e && void 0 !== e ? e : "[]");
-                    if (! function(e) {
-                            return Array.isArray(e) && e.length > 0 && null !== e[0]
-                        }(t)) return Object(y.a)(P);
+                    if (! function (e) {
+                        return Array.isArray(e) && e.length > 0 && null !== e[0]
+                    }(t)) return Object(y.a)(P);
                     for (var a = M(t[0].toString()), n = [
-                            [a, 0]
-                        ]; n.length;) {
+                        [a, 0]
+                    ]; n.length;) {
                         var l = n.shift();
                         if (l) {
                             var r = Object(s.a)(l, 2),
@@ -233,11 +235,11 @@
                     }
                     return a
                 },
-                $ = function(e) {
+                $ = function (e) {
                     var t = _(e);
                     return [JSON.stringify(t), JSON.stringify(J(t))]
                 },
-                G = function(e) {
+                G = function (e) {
                     if (null === e) return 0;
                     try {
                         return R(e)
@@ -251,36 +253,36 @@
                     selectedNode: null,
                     nodeCounter: 0
                 },
-                K = function(e) {
+                K = function (e) {
                     return {
                         type: v.UpdateTree,
                         payload: e
                     }
                 },
-                Q = function() {
+                Q = function () {
                     return {
                         type: v.DeleteTree
                     }
                 },
-                X = function(e) {
+                X = function (e) {
                     var t = $(e);
-                    ! function(e) {
+                    ! function (e) {
                         var t = document.createElement("input");
                         document.body.appendChild(t), t.setAttribute("value", e), t.select(), document.execCommand("copy"), document.body.removeChild(t)
                     }(Object(s.a)(t, 2)[1])
                 },
-                ee = function(e, t) {
+                ee = function (e, t) {
                     var a = $(e),
                         n = Object(s.a)(a, 1)[0],
-                        l = function(e) {
+                        l = function (e) {
                             return JSON.stringify(e)
                         }(t);
                     localStorage.setItem(Z, n), localStorage.setItem("tree-node-counter", l)
                 },
-                te = function() {
+                te = function () {
                     localStorage.removeItem(Z), localStorage.removeItem("tree-node-counter")
                 },
-                ae = function() {
+                ae = function () {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
                         t = arguments.length > 1 ? arguments[1] : void 0;
                     switch (t.type) {
@@ -297,35 +299,35 @@
                             return e
                     }
                 };
-            ! function(e) {
+            ! function (e) {
                 e.Explore = "explore", e.Process = "process"
             }(j || (j = {})),
-            function(e) {
-                e.LevelOrder = "bfs", e.PreOrder = "preorder", e.InOrder = "inorder", e.PostOrder = "postorder", e.Default = "bfs"
-            }(S || (S = {})),
-            function(e) {
-                e.Fast = "fast", e.Average = "average", e.Slow = "slow", e.Default = "average"
-            }(C || (C = {})),
-            function(e) {
-                e.Idle = "idle", e.Running = "running", e.Paused = "paused", e.Default = "idle"
-            }(F || (F = {})),
-            function(e) {
-                e.UpdateVisualization = "UPDATE_VISUALIZATION"
-            }(V || (V = {}));
+                function (e) {
+                    e.LevelOrder = "bfs", e.PreOrder = "preorder", e.InOrder = "inorder", e.PostOrder = "postorder", e.Default = "bfs"
+                }(S || (S = {})),
+                function (e) {
+                    e.Fast = "fast", e.Average = "average", e.Slow = "slow", e.Default = "average"
+                }(C || (C = {})),
+                function (e) {
+                    e.Idle = "idle", e.Running = "running", e.Paused = "paused", e.Default = "idle"
+                }(F || (F = {})),
+                function (e) {
+                    e.UpdateVisualization = "UPDATE_VISUALIZATION"
+                }(V || (V = {}));
             var ne, le, re, oe = {
-                    algorithm: S.Default,
-                    speed: C.Default,
-                    status: F.Default,
-                    traversalPath: [],
-                    traversalPathIndex: 0
-                },
-                ie = function(e) {
+                algorithm: S.Default,
+                speed: C.Default,
+                status: F.Default,
+                traversalPath: [],
+                traversalPathIndex: 0
+            },
+                ie = function (e) {
                     return {
                         type: V.UpdateVisualization,
                         payload: e
                     }
                 },
-                ce = function() {
+                ce = function () {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : oe,
                         t = arguments.length > 1 ? arguments[1] : void 0;
                     switch (t.type) {
@@ -342,14 +344,14 @@
                 },
                 se = o.a.createContext({
                     state: de,
-                    dispatch: function() {
+                    dispatch: function () {
                         return null
                     }
                 }),
                 ue = a(35),
-                me = function(e) {
-                    return function(t, a) {
-                        return Object.keys(e).reduce((function(t, n) {
+                me = function (e) {
+                    return function (t, a) {
+                        return Object.keys(e).reduce((function (t, n) {
                             return Object(d.a)({}, t, Object(ue.a)({}, n, e[n](t[n], a)))
                         }), t)
                     }
@@ -358,10 +360,10 @@
                     tree: ae,
                     visualization: ce
                 }),
-                he = (a(144), a(145), function(e, t) {
+                he = (a(144), a(145), function (e, t) {
                     switch (t) {
                         case S.LevelOrder:
-                            return function(e) {
+                            return function (e) {
                                 for (var t = [], a = [e]; a.length;) {
                                     var n = a.shift();
                                     n && (t.push({
@@ -370,14 +372,14 @@
                                     }), t.push({
                                         location: n.location,
                                         action: j.Process
-                                    }), n.children && n.children.forEach((function(e) {
+                                    }), n.children && n.children.forEach((function (e) {
                                         e.type === m.Regular && a.push(e)
                                     })))
                                 }
                                 return t
                             }(e);
                         case S.PreOrder:
-                            return function(e) {
+                            return function (e) {
                                 for (var t = [], a = [e]; a.length;) {
                                     var n = a.pop();
                                     n && (t.push({
@@ -386,36 +388,36 @@
                                     }), t.push({
                                         location: n.location,
                                         action: j.Process
-                                    }), n.children && n.children.slice().reverse().forEach((function(e) {
+                                    }), n.children && n.children.slice().reverse().forEach((function (e) {
                                         e.type === m.Regular && a.push(e)
                                     })))
                                 }
                                 return t
                             }(e);
                         case S.InOrder:
-                            return function(e) {
+                            return function (e) {
                                 for (var t = [], a = [], n = e; a.length || n;) {
                                     for (; n && n.type === m.Regular;) {
                                         if (a.push(n), t.push({
-                                                location: n.location,
-                                                action: j.Explore
-                                            }), n.children && n.children[0]) n = Object(s.a)(n.children, 1)[0];
+                                            location: n.location,
+                                            action: j.Explore
+                                        }), n.children && n.children[0]) n = Object(s.a)(n.children, 1)[0];
                                         else n = null
                                     }
                                     if (n = a.pop())
                                         if (t.push({
-                                                location: n.location,
-                                                action: j.Process
-                                            }), n.children && n.children[1]) n = Object(s.a)(n.children, 2)[1];
+                                            location: n.location,
+                                            action: j.Process
+                                        }), n.children && n.children[1]) n = Object(s.a)(n.children, 2)[1];
                                         else n = null
                                 }
                                 return t
                             }(e);
                         case S.PostOrder:
-                            return function(e) {
+                            return function (e) {
                                 for (var t = [], a = [
-                                        [e, !1]
-                                    ]; a.length;) {
+                                    [e, !1]
+                                ]; a.length;) {
                                     var n = a.pop();
                                     if (n) {
                                         var l = Object(s.a)(n, 2),
@@ -426,10 +428,10 @@
                                         });
                                         else {
                                             if (t.push({
-                                                    location: r.location,
-                                                    action: j.Explore
-                                                }), a.push([r, !0]), !r.children) continue;
-                                            r.children.slice().reverse().forEach((function(e) {
+                                                location: r.location,
+                                                action: j.Explore
+                                            }), a.push([r, !0]), !r.children) continue;
+                                            r.children.slice().reverse().forEach((function (e) {
                                                 e.type === m.Regular && a.push([e, !1])
                                             }))
                                         }
@@ -462,15 +464,15 @@
                         fill: "#FFFFFF"
                     }
                 },
-                ye = function(e) {
+                ye = function (e) {
                     for (var t = [e]; t.length;) {
                         var a = t.shift();
-                        a && (H(a), a.children && a.children.forEach((function(e) {
+                        a && (H(a), a.children && a.children.forEach((function (e) {
                             e.type === m.Regular && t.push(e)
                         })))
                     }
                 },
-                be = function(e) {
+                be = function (e) {
                     var t = e.status,
                         a = e.traversalPath,
                         n = e.traversalPathIndex;
@@ -485,7 +487,7 @@
                 Se = a(239),
                 Ce = a(240),
                 Fe = a(39),
-                Ve = (a(146), function(e) {
+                Ve = (a(146), function (e) {
                     var t = e.speedMenu,
                         a = e.visualizationMenu,
                         n = Object(r.useContext)(se),
@@ -495,10 +497,10 @@
                         s = i.visualization,
                         u = s.algorithm,
                         m = s.speed,
-                        h = function() {
+                        h = function () {
                             c(Q())
                         },
-                        p = function() {
+                        p = function () {
                             X(d), Se.a.success({
                                 message: "Successfully Copied!",
                                 description: "The LeetCode array version of the tree has been copied to your clipboard.",
@@ -506,7 +508,7 @@
                                 placement: "bottomLeft"
                             })
                         },
-                        v = function() {
+                        v = function () {
                             c(g({
                                 playgroundView: l.Visualization
                             })), c(ie({
@@ -573,7 +575,7 @@
                     }))))
                 }),
                 xe = a(238),
-                Ie = (a(178), function() {
+                Ie = (a(178), function () {
                     var e, t = Object(r.useContext)(se),
                         a = t.state,
                         n = t.dispatch,
@@ -584,18 +586,19 @@
                         m = Object(s.a)(u, 2),
                         h = m[0],
                         p = m[1];
-                    Object(r.useEffect)((function() {
+                    Object(r.useEffect)((function () {
                         var e;
                         p(null !== (e = null === d || void 0 === d ? void 0 : d.name) && void 0 !== e ? e : "")
                     }), [d]);
-                    var v = function(e) {
-                            return !Number.isNaN(+e) && /^([1-9]+\d*|0)$/.test(e) || "" === e
-                        },
-                        f = function(e) {
+                    var v = function (e) {
+                        // return !Number.isNaN(+e) && /^([1-9]+\d*|0)$/.test(e) || "" === e
+                        return true
+                    },
+                        f = function (e) {
                             var t = e.target.value;
-                           p(e.target.value)
+                            p(e.target.value)
                         },
-                        E = function() {
+                        E = function () {
                             if (d) {
                                 var e = Object(y.a)(c);
                                 A(e, d.location).name = h.toString(), n(K({
@@ -603,11 +606,11 @@
                                 }))
                             }
                         },
-                        b = function(e) {
+                        b = function (e) {
                             var t = e.target.value;
                             v(t) && E()
                         },
-                        N = function() {
+                        N = function () {
                             if (d) {
                                 if ("" === d.location) return n(g({
                                     playgroundView: l.Home
@@ -632,11 +635,12 @@
                         className: "nodeupdateview-left-input",
                         addonBefore: o.a.createElement(we.a, null),
                         bordered: !0,
-                        maxLength: 9,
+                        maxLength: 20,
                         placeholder: "Node Value",
                         value: h,
+                        id: "myInput",
                         onChange: f,
-                        onPressEnter: b
+                        onPressEnter: E
                     }), o.a.createElement(Fe.a, {
                         className: "nodeupdateview-left-compressed-item",
                         type: "primary",
@@ -651,7 +655,7 @@
                     }, o.a.createElement(Fe.a, {
                         className: "nodeupdateview-right-item",
                         type: "primary",
-                        onClick: function() {
+                        onClick: function () {
                             var e = Object(y.a)(c);
                             W(e, null === d || void 0 === d ? void 0 : d.location), n(g({
                                 playgroundView: l.Home
@@ -828,7 +832,7 @@
                     }))))
                 }]),
                 qe = Ze.length - 1,
-                Ke = function(e) {
+                Ke = function (e) {
                     var t = e.page,
                         a = e.visible,
                         n = e.handleDone,
@@ -856,7 +860,7 @@
                         onCancel: n
                     }, c)
                 },
-                Qe = (a(191), function() {
+                Qe = (a(191), function () {
                     var e = Object(r.useState)(!1),
                         t = Object(s.a)(e, 2),
                         a = t[0],
@@ -868,13 +872,13 @@
                     return o.a.createElement(o.a.Fragment, null, o.a.createElement(Ke, {
                         page: c,
                         visible: a,
-                        handleDone: function() {
+                        handleDone: function () {
                             n(!1)
                         },
-                        handleNextPage: function() {
+                        handleNextPage: function () {
                             d(c + 1)
                         },
-                        handlePreviousPage: function() {
+                        handlePreviousPage: function () {
                             d(c - 1)
                         }
                     }), o.a.createElement("div", {
@@ -885,7 +889,7 @@
                         shape: "circle",
                         size: "small",
                         type: "primary",
-                        onClick: function() {
+                        onClick: function () {
                             n(!0)
                         }
                     })))
@@ -901,7 +905,7 @@
                 it = a(256),
                 ct = a(257),
                 dt = a(242),
-                st = (a(192), function(e) {
+                st = (a(192), function (e) {
                     var t, a, n = e.speedMenu,
                         i = Object(r.useContext)(se),
                         c = i.state,
@@ -912,7 +916,7 @@
                         h = u.speed,
                         p = u.status,
                         v = u.traversalPath,
-                        f = function() {
+                        f = function () {
                             var e = Object(y.a)(s);
                             ye(e), d(K({
                                 data: e
@@ -921,17 +925,17 @@
                                 traversalPathIndex: 0
                             }))
                         },
-                        E = function() {
+                        E = function () {
                             p === F.Running && d(ie({
                                 status: F.Paused
                             }))
                         },
-                        b = function() {
+                        b = function () {
                             p === F.Paused && d(ie({
                                 status: F.Running
                             }))
                         },
-                        N = function() {
+                        N = function () {
                             var e = Object(y.a)(s);
                             ye(e), d(g({
                                 playgroundView: l.Home
@@ -1019,11 +1023,11 @@
                         icon: o.a.createElement(ct.a, null)
                     }, "Processed")))
                 }),
-                ut = function(e) {
+                ut = function (e) {
                     var t, a = e.playgroundView,
                         n = Object(r.useContext)(se).dispatch,
                         i = o.a.createElement(Oe.a, {
-                            onClick: function(e) {
+                            onClick: function (e) {
                                 var t = e.key;
                                 n(ie({
                                     speed: t
@@ -1040,7 +1044,7 @@
                             icon: o.a.createElement(Ne.a, null)
                         }, "Slow")),
                         c = o.a.createElement(Oe.a, {
-                            onClick: function(e) {
+                            onClick: function (e) {
                                 var t = e.key;
                                 n(ie({
                                     algorithm: t
@@ -1089,12 +1093,12 @@
                 vt = !1,
                 ft = "vertical",
                 gt = 0,
-                Et = function(e) {
+                Et = function (e) {
                     var t = e.source,
                         a = e.target;
                     return "plus" === a.type ? null : "M".concat(t.x, ",").concat(t.y, "L").concat(a.x, ",").concat(a.y)
                 },
-                yt = function(e) {
+                yt = function (e) {
                     var t = e.data,
                         a = e.onClick,
                         n = vt,
@@ -1121,7 +1125,7 @@
                         pathFunc: c
                     })
                 },
-                bt = function() {
+                bt = function () {
                     var e = Object(r.useContext)(se),
                         t = e.state,
                         a = e.dispatch,
@@ -1136,10 +1140,10 @@
                         E = c.status,
                         O = c.traversalPath,
                         k = c.traversalPathIndex,
-                        P = Object(r.useCallback)((function() {
+                        P = Object(r.useCallback)((function () {
                             ee(s, v)
                         }), [v, s]),
-                        S = Object(r.useCallback)((function(e) {
+                        S = Object(r.useCallback)((function (e) {
                             if ("Escape" === e.code && null !== h && d === l.NodeUpdate) {
                                 var t = Object(y.a)(s);
                                 W(t, null === h || void 0 === h ? void 0 : h.location), a(g({
@@ -1150,19 +1154,19 @@
                                 }))
                             }
                         }), [a, s, d, h]);
-                    Object(r.useEffect)((function() {
+                    Object(r.useEffect)((function () {
                         return window.addEventListener("beforeunload", P), window.addEventListener("keydown", S),
-                            function() {
+                            function () {
                                 window.removeEventListener("beforeunload", P), window.removeEventListener("keydown", S)
                             }
-                    }), [P, S]), Object(r.useEffect)((function() {
-                        var e = setTimeout((function() {
+                    }), [P, S]), Object(r.useEffect)((function () {
+                        var e = setTimeout((function () {
                             if (be(c)) {
                                 var e = O[k],
                                     t = e.location,
                                     n = e.action,
                                     l = Object(y.a)(s);
-                                ! function(e, t) {
+                                ! function (e, t) {
                                     switch (t) {
                                         case j.Explore:
                                             e.nodeSvgShape = Object(y.a)(ge);
@@ -1181,7 +1185,7 @@
                             }
                         }), fe[f]);
                         return be(c) || clearTimeout(e),
-                            function() {
+                            function () {
                                 return clearTimeout(e)
                             }
                     }), [a, i, s, c, f, E, O, k]);
@@ -1191,23 +1195,31 @@
                         playgroundView: d
                     }), o.a.createElement(yt, {
                         data: t.tree.data,
-                        onClick: function(e) {
+                        onClick: function (e) {
                             if (E === F.Idle) {
                                 var t = e,
                                     n = Object(y.a)(s),
                                     r = A(n, t.location);
                                 switch (T(e)) {
                                     case b.AddNewNode:
-                                        ! function(e) {
+                                        ! function (e) {
                                             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
                                             e.name = t.toString(), e.type = m.Regular, e.nodeSvgShape = Object(y.a)(N)
-                                        }(r, v + 1), a(K({
+                                        }(r, (parseInt(v)) + 1), a(K({
                                             data: n,
-                                            nodeCounter: v + 1
+                                            nodeCounter: (parseInt(v, 10)) + 1
                                         }));
                                         break;
                                     case b.ShowPlusNodes:
-                                        ! function(e) {
+                                        console.log(1234);
+                                        let input = document.getElementById('myInput');
+                                        if (input) {
+                                            input.focus();
+                                            setTimeout(() => {
+                                                input.select();
+                                            }, 100);
+                                        }
+                                        ! function (e) {
                                             L(e), z(e) ? e.children = [D(e.location + u.Left), D(e.location + u.Right)] : e.children && x(e) ? (e.children[0].name = p.Shown, e.children[0].nodeSvgShape = Object(y.a)(w)) : e.children && I(e) && (e.children[1].name = p.Shown, e.children[1].nodeSvgShape = Object(y.a)(w))
                                         }(r), (null === h || void 0 === h ? void 0 : h.location) !== t.location && W(n, null === h || void 0 === h ? void 0 : h.location), a(g({
                                             playgroundView: l.NodeUpdate
@@ -1220,6 +1232,13 @@
                                         }));
                                         break;
                                     case b.HidePlusNodes:
+                                        let input2 = document.getElementById('myInput');
+                                        if (input2) {
+                                            input2.focus();
+                                            setTimeout(() => {
+                                                input2.select();
+                                            }, 100);
+                                        }
                                         if (W(n, null === h || void 0 === h ? void 0 : h.location), (null === h || void 0 === h ? void 0 : h.location) === t.location) {
                                             a(g({
                                                 playgroundView: l.Home
@@ -1246,17 +1265,17 @@
                         }
                     }))
                 },
-                Nt = function() {
+                Nt = function () {
                     var e = Object(r.useReducer)(me, de),
                         t = Object(s.a)(e, 2),
                         a = t[0],
                         n = t[1];
-                    Object(r.useEffect)((function() {
+                    Object(r.useEffect)((function () {
                         n({
                             type: v.FetchTree
                         })
                     }), []);
-                    var l = Object(r.useMemo)((function() {
+                    var l = Object(r.useMemo)((function () {
                         return {
                             state: a,
                             dispatch: n
@@ -1267,9 +1286,9 @@
                     }, o.a.createElement(bt, null))
                 };
             Boolean("localhost" === window.location.hostname || "[::1]" === window.location.hostname || window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
-            c.a.render(o.a.createElement(Nt, null), document.getElementById("root")), "serviceWorker" in navigator && navigator.serviceWorker.ready.then((function(e) {
+            c.a.render(o.a.createElement(Nt, null), document.getElementById("root")), "serviceWorker" in navigator && navigator.serviceWorker.ready.then((function (e) {
                 e.unregister()
-            })).catch((function(e) {
+            })).catch((function (e) {
                 console.error(e.message)
             }))
         }
